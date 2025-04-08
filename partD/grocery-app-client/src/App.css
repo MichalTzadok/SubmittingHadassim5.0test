@@ -1,0 +1,334 @@
+/* קונטיינר כללי לדף */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* כותרות */
+h2, .login-title, .orders-title, .order-title, .products-title, .order-details-title, .order-products-modal h3 {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+h2, .login-title, .orders-title {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* עיצוב של הפורם */
+.add-product-form, .order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-product-form input, .order-select, .input-group input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-product-form input:focus, .order-select:focus, .input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.add-product-form button, .login2-button, .btn-add, .btn-primary, .logout-btn, .complete-btn, .view-products-btn {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-product-form button:hover, .login2-button:hover, .btn-add:hover, .btn-primary:hover, .logout-btn:hover {
+  background-color: #0056b3;
+}
+
+.add-product-form button:disabled, .login2-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* קונטיינר לכניסות */
+.login-container, .orders-container, .order-container, .order-products-modal {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background-color: #f4f6f8;
+  gap: 60px;
+}
+
+.login-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.orders-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.orders-table thead {
+  background-color: #333;
+  color: white;
+}
+
+.orders-table th, .orders-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.orders-table tbody tr:hover {
+  background: #f1f1f1;
+}
+
+.status-message {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-item, .order-item {
+  font-size: 16px;
+  color: #444;
+}
+
+.product-name, .order-product-name {
+  font-weight: bold;
+}
+
+.order-quantity {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button.active {
+  background-color: #248eff;
+  color: white;
+  font-weight: bold;
+}
+
+.filter-buttons button:hover {
+  background-color: #c6dfff;
+}
+
+/* כותרת של המוצרים */
+h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+/* כפתורי לוגין */
+.login-button {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff; 
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 350px; 
+}
+
+.login-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #0056b3; 
+}
+
+/* טבלה */
+table {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+}
+
+table td {
+  font-size: 16px;
+}
+
+/* טבלה לאורדרים */
+.orders-table thead {
+  background-color: #333;
+  color: white;
+}
+
+.orders-table tbody tr:hover {
+  background: #f1f1f1;
+}
+
+.complete-btn, .view-products-btn {
+  background-color: #248eff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.order-products-modal button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* עיצוב כפתורים */
+.btn-add, .btn-primary {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-add:hover, .btn-primary:hover {
+  background: #0056b3;
+}
+
+.status-message {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* סגנון ה-login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px);
+  background-color: #f8f9fa;
+  padding-top: 20px;
+}
+
+.input-group {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.to-register{
+  color: #2c3e50;
+}
+
+.to-register:hover{
+  color: #007bff;
+  text-decoration: underline;
+}
