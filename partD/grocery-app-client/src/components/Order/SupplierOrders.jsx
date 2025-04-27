@@ -78,7 +78,7 @@ const SupplierOrders = () => {
                     All Orders
                 </button>
                 <button
-                    className={filter === "pending" ? "active" : ""}
+                    className={filter === "completed" ? "active" : ""}
                     onClick={() => { setFilter("completed"); setSelectedOrder(null); }}
                 >
                     Orders in Process
